@@ -1,0 +1,22 @@
+@mixin scrollbar($scroll-bg : $scrollbar-bg,
+                 $track-bg : $scroll-bg,
+                 $thumb-bg : darken($scroll-bg,7%),
+                 $size : 11px)
+{
+    &::-webkit-scrollbar {
+        background-color: $scroll-bg;
+        @include size($size);
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $track-bg;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $thumb-bg;
+        &:hover {
+            background-color: darken($thumb-bg,5%);
+        }
+        &:active {
+            background-color: darken($thumb-bg,8%);
+        }
+    }
+}

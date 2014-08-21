@@ -1,0 +1,46 @@
+@mixin simpleBtn($bg,$hover,$active) {
+    background-color: $bg;
+    &:hover {
+        background-color: $hover;
+    }
+    &:active, &:focus {
+        background-color: $active;
+    }
+}
+.wfe-btn {
+    background-color: transparent;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    font-size: em($btn-font-size);
+    font-weight: $btn-font-weight;
+    line-height: 2.19;
+    margin-bottom: 0; // For input.btn
+    min-width: em($btn-min-width);
+    padding: 1px 22px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    @extend .dib;
+    &:focus, &:active {
+        outline: 0;
+    }
+}
+.wfe-primary-btn {
+    @include simpleBtn($primary-color,$primary-hover-color,$primary-active-color);
+}
+.wfe-success-btn {
+    @include simpleBtn($success-color,$success-hover-color,$success-active-color);
+}
+.wfe-danger-btn {
+    @include simpleBtn($danger-color,$danger-hover-color,$danger-active-color);
+}
+.wfe-link-btn {
+    color: $btn-link-color;
+    padding: 1px 10px;
+    &:hover, &:focus, &:active {
+        color: $btn-link-color;
+        text-decoration: underline;
+    }
+}

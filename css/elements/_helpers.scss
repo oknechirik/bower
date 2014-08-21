@@ -1,0 +1,106 @@
+.clearfix {
+    &:after {
+        clear: both;
+    }
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+}
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.dn {
+    display: none;
+}
+
+.di {
+    display: inline;
+}
+
+.plain-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+.valign-middle {
+    vertical-align: middle;
+}
+.valign-top {
+    vertical-align: top;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.wfe-shadow {
+    box-shadow: 6px 6px rgba(0, 0, 0, .05);
+}
+
+.wfe-shadow-small {
+    box-shadow: 5px 5px rgba(0, 0, 0, .05);
+}
+
+.wfe-shadow-smallest {
+    box-shadow: 3px 3px rgba(0, 0, 0, .05);
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @extend .nobr;
+}
+//.text-link {
+//    color: $text-link-color;
+//    text-decoration: none;
+//    &:visited {
+//        color: $text-link-color;
+//    }
+//    &:hover {
+//        color: $text-link-hover-color;
+//        text-decoration: none;
+//    }
+//    &.wfe-disabled {
+//        opacity: .2;
+//    }
+//}

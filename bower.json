@@ -1,0 +1,33 @@
+{
+  "name": "bower",
+  "version": "0.0.1",
+  "homepage": "https://github.com/oknechirik/bower",
+  "description": "base project",
+  "main": "[]",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "bower",
+    "html5",
+    "css",
+    "scss"
+  ],
+  "authors": [
+    "oknechirik"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+        "Modernizr": "~2.8.3",
+        "jquery": "~1.11.1"
+    }
+}

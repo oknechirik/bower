@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+    background-color: $white;
+    height: 13px;
+    width: 13px;
+}
+
+//::-webkit-scrollbar-button       { /* 2 */ }
+::-webkit-scrollbar-track {
+    border: solid $scrollbar-border;
+    border-width: 0 1px;
+    border-radius: 1em;
+}
+
+//::-webkit-scrollbar-track-piece  { /* 4 */ }
+::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-button-bg;
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+//::-webkit-resizer                { /* 7 */ }
+
+.file-categories__list-item-content::-webkit-scrollbar {
+    background-color: $scrollbar-leftsidebar-bg;
+}
+
+.file-categories__list-item-content::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-leftsidebar-button-bg;
+}
+.modal-body__scrolled {
+    &::-webkit-scrollbar {
+        background-color: $scrollbar-modal-bg;
+        @include size(6px);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar-modal-button-bg;
+        cursor: pointer;
+        &:hover {
+            background-color: $scrollbar-modal-button-hover-bg;
+        }
+        &:active {
+            background-color: $scrollbar-modal-button-active-bg;
+        }
+
+    }
+}
+.filegrid-scroller {
+    &::-webkit-scrollbar {
+        background-color: $scrollbar-filegrid-bg;
+        @include size(11px);
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+        border: 0;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $scrollbar-filegrid-button-bg;
+        cursor: pointer;
+        &:hover {
+            background-color: $scrollbar-filegrid-button-hover-bg;
+        }
+        &:active {
+            background-color: $scrollbar-filegrid-button-active-bg;
+        }
+    }
+    &::-webkit-scrollbar-button {
+        &:vertical {
+            &:start {
+                background-color: $white;
+                @include size(11px,30px);
+            }
+        }
+    }
+}
+.file-categories__list-item-content_company {
+    @include scrollbar($size : 7px);
+}

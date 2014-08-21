@@ -1,0 +1,183 @@
+//----------------------------- Colors ------------------------
+$wfe-color-aqua: rgb(241, 238, 243);//#c9eef3;
+$wfe-color-silver: rgb(112, 112, 112);
+$wfe-gray: rgb(235, 235, 235);
+$wfe-dark : rgb(47,47,47);
+$wfe-link-color : rgb(0,167,236);
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+/* /colors*/
+
+$file-categories-anchor-color: rgb(0, 0, 0);
+$file-categories-anchor-hover-color: rgb(0, 0, 0);
+$file-categories-anchor-hover-bg: rgb(232, 232, 232);
+$file-categories-anchor-active-color: $white;
+$file-categories-anchor-active-bg: rgb(173, 179, 193);
+
+$file-categories-children-bg: $wfe-gray;
+$file-categories-children-anchor-color: rgb(41, 42, 47);
+$file-categories-children-anchor-hover-color: rgb(41, 42, 47);
+$file-categories-children-anchor-hover-bg: rgb(231, 231, 231);
+$file-categories-children-anchor-active-bg: rgb(201, 238, 243);
+
+$file-categories-toggler-bg : rgb(150,150,150);
+$file-categories-toggler-hover-bg : rgb(121,121,121);
+$file-categories-toggler-active-bg : rgb(106,106,106);
+
+//----------------------------- Fonts -------------------------
+$basefont: 13;
+$base-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$RobotoThinWeight: 100;
+$RobotoLightWeight: 300;
+$RobotoRegularWeight: 400;
+$RobotoMediumWeight: 500;
+$RobotoBoldWeight: 700;
+$RobotoUltraBoldWeight: 900;
+
+/* form elements ******************************************************************************************************/
+$text-field-bg : $white;
+$text-field-border : rgb(224,224,224);
+$text-field-color : $wfe-dark;
+$text-field-error-border : rgb(255,180,180);
+$text-field-error-color : rgb(252,98,98);
+$messages-error-color : $text-field-error-color;
+
+
+//buttons
+
+$btn-font-weight : 400;
+$btn-font-size : 15;
+$btn-min-width : 60;
+$btn-link-color : rgb(0,155,255);
+
+$primary-color : rgb(38,176,255);
+$primary-hover-color : rgb(61,184,255);
+$primary-active-color : rgb(84,192,255);
+
+$success-color : rgb(43,205,187);
+$success-hover-color : rgb(29,213,192);
+$success-active-color : rgb(33,224,203);
+
+$danger-color : rgb(255,99,118);
+$danger-hover-color : rgb(255,114,127);
+$danger-active-color : rgb(255,136,147);
+
+/* /form elements ******************************************************************************************************/
+
+//left-sidebar
+$left-sidebar-bg: rgb(241, 241, 241);
+
+//scrollbars
+$scrollbar-bg : rgb(229,229,229);
+$scrollbar-button-bg: rgb(224, 224, 224);
+$scrollbar-border: $wfe-gray;
+
+$scrollbar-leftsidebar-bg: $left-sidebar-bg;
+$scrollbar-leftsidebar-button-bg: rgb(212, 212, 212);
+
+$scrollbar-modal-bg: rgb(244, 244, 244);
+$scrollbar-modal-button-bg: rgb(226,226,226);
+$scrollbar-modal-button-hover-bg: rgb(213,213,213);
+$scrollbar-modal-button-active-bg: rgb(194,194,194);
+
+$scrollbar-filegrid-bg : rgb(244,244,244);
+$scrollbar-filegrid-button-bg : rgb(226,226,226);
+$scrollbar-filegrid-button-hover-bg : rgb(213,213,213);
+$scrollbar-filegrid-button-active-bg : rgb(194,194,194);
+
+
+
+
+
+//filegrid-header
+$filegrid-header-color: rgb(139, 139, 139);
+$filegrid-header__item-color: rgb(0, 153, 241);
+$filegrid-list__item-border: rgb(237, 237, 237);
+$filegrid-list__item-color: rgb(79, 79, 79);
+$filegrid-list__row-hover-bg: rgb(248, 248, 248);
+$filegrid-list__row-active-bg: rgb(239, 253, 255);
+$filegrid-list-item__file-anchor-color : rgb(33,33,33);
+$filegrid-list-item__file-anchor-hover-color : rgb(41,177,255);
+$filegrid-list-item__file-anchor-selected-bg : rgb(201, 238, 243);
+$filegrid-add-folder-field-border : rgb(195,237,242);
+
+//dropdown
+$dropdown-item-disabled-color: rgb(159, 159, 159);
+$dropdown-border : rgba(156,156,156,.5);
+$dropdown-bg : rgba(255,255,255,.95);
+
+//resizer
+$resizer-bg : $wfe-gray;
+
+//placeholder
+$placeholder-color : rgb(172, 172, 172);$resizer-bg : $wfe-gray;
+
+//login-page
+$login-footer-color : rgb(100,100,100);
+$login-error-color : $text-field-error-color;
+$login-remember-color : $wfe-dark;
+$login-placeholder-color : rgb(172,172,172);
+
+$login-field-error-border : $text-field-error-border;
+$login-field-error-color : $text-field-error-color;
+
+$login-button-border : rgb(213,213,213);
+$login-button-hover-border : rgb(195,195,195);
+$login-button-active-border : rgb(171,171,171);
+$login-button-color : $wfe-link-color;
+$login-button-hover-color : darken($login-button-color,10%);
+$login-button-active-color : darken($login-button-color,20%);
+$login-button-disabled-color : rgb(205,205,205);
+
+//flex box browser support
+$flexbox-legacy-support: -moz, -webkit, -o, -ms, not -khtml, official;
+$flexbox-display-warnings: false;
+
+//modal
+$modal-bg : $white;
+$modal-border : rgb(201,201,201);
+$modal-inner-border : rgb(234,234,234);
+$modal-divider-border : rgb(208,208,208);
+
+//sharing
+$sharing-row-hover : rgb(248,248,248);
+$sharing-users__name-color : rgb(41,42,47);
+$sharing-users__email-color : $black;
+$sharing-users__role-value : rgb(112,112,112);
+$sharing-add-user__field-border : rgb(234,234,234);
+$sharing-add-user__field-hover-border : rgb(226,226,226);
+$sharing-add-user__field-active-border : rgb(218,218,218);
+$sharing-add-user__field_placeholder : rgb(125,125,125);
+$sharing-add-user__role-choice-color : rgb(0,155,255);
+
+//
+$upload-modal__content-color : rgb(54,54,54);
+//user profile
+$user-profile-title-color : rgb(54,54,54);
+$user-profile-list-color : rgb(54,54,54);
+$user-profile-quota-color : rgb(137,137,137);
+$user-profile-name-color : rgb(54,54,54);
+$user-profile-initials-bg : rgb(241,129,150);
+
+
+//breadcrumbs
+$breadcrumbs-color : rgb(90,90,90);
+$breadcrumbs-divider-color : rgb(190,190,190);
+$breadcrumbs-active-color : rgb(0,0,0);
+
+//progress-bar
+$progress-wrap-bg : rgb(240,240,240);
+$progress-bar-bg : rgb(22,194,175);
+$progress-bar-color : rgb(22,194,175);
+
+//
+$column-dropdown__label-color : rgb(54,54,54);
+$column-dropdown__label-hover-bg : rgb(248,248,248);
+
+//document create
+$document-create-color : rgb(32,32,32);
+
+//tooltip
+$tooltip-bg : rgba(148,154,167,.95);

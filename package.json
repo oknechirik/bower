@@ -1,0 +1,34 @@
+{
+  "name": "bower",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+      "bootstrap-npm": "^4.1.0",
+      "grunt": "~0.4.5",
+      "grunt-bower-install-simple": "~0.9.3",
+      "grunt-contrib-concat": "~0.5.0",
+      "grunt-contrib-cssmin": "~0.10.0",
+      "grunt-contrib-uglify": "~0.5.0",
+      "grunt-wiredep": "~1.8.0",
+      "node-bourbon": "~1.2.3",
+      "time-grunt": "~0.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oknechirik/bower.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "oknechirik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oknechirik/bower/issues"
+  },
+  "homepage": "https://github.com/oknechirik/bower"
+}

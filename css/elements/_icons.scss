@@ -1,0 +1,104 @@
+@import "icon-list";
+.wfe-icon, [class*='wfe-icon'] {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    @extend .hide-text;
+    @extend .dib;
+//    @include size(2rem);
+    &.text-edit-toolbar__button {
+        @extend .hide-text;
+    }
+}
+
+.wfe-icon_20x {
+    @include size(20px);
+}
+
+@each $icon in $icon-list {
+    .wfe-icon_#{$icon} {
+        background-image: url( $image-folder + "#{$icon}.png");
+    }
+}
+@each $icon in $icon-list-hover {
+    .wfe-icon_#{$icon} {
+        &:hover {
+            background-image: url( $image-folder + "#{$icon}_hover.png");
+        }
+    }
+}
+@each $icon in $icon-list-active {
+    .wfe-icon_#{$icon} {
+        &.wfe-active, &:active, &:focus {
+            background-image: url( $image-folder + "#{$icon}_pressed.png");
+            outline: 0;
+        }
+    }
+}
+
+@each $icon in $icon-list-disabled {
+    .wfe-icon_#{$icon} {
+        &.wfe-disabled, &[disabled] {
+            background-image: url( $image-folder + "#{$icon}_disabled.png");
+            cursor: default;
+        }
+    }
+}
+
+
+.actions-icons {
+//    background-origin: content-box;
+    background-size: cover;
+//    box-sizing: content-box;
+//    padding: 2px 0;
+    vertical-align: top;
+    @extend .dib;
+    @include size(2rem);
+}
+.actions-icons_text {
+    font-size: .75rem;
+    line-height: 2rem;
+    width: auto;
+    @extend .dib;
+    @extend .text-link;
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+
+only screen and (-o-min-device-pixel-ratio: 2/1),
+
+only screen and (-webkit-min-device-pixel-ratio: 2),
+
+only screen and (min-device-pixel-ratio: 2) {
+    @each $icon in $icon-list {
+        .wfe-icon_#{$icon} {
+            background-image: url( $image-folder-retina + "#{$icon}@2x.png");
+        }
+    }
+    @each $icon in $icon-list-hover {
+        .wfe-icon_#{$icon} {
+            &:hover {
+                background-image: url( $image-folder-retina + "#{$icon}_hover@2x.png");
+            }
+        }
+    }
+    @each $icon in $icon-list-active {
+        .wfe-icon_#{$icon} {
+            &.wfe-active, &:active, &:focus {
+                background-image: url( $image-folder + "#{$icon}_pressed.png");
+                outline: 0;
+            }
+        }
+    }
+    @each $icon in $icon-list-disabled {
+        .wfe-icon_#{$icon} {
+            &.wfe-disabled {
+                background-image: url( $image-folder-retina + "#{$icon}_disabled@2x.png");
+                cursor: default;
+            }
+        }
+    }
+    .header__logo {
+        background-image: url( $image-folder-retina + "login_icon@2x.png");
+    }
+}
+
